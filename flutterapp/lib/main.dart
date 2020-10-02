@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterapp/pages/global.dart';
 import 'pages/second.dart';
+
 
 void main()=>runApp(Homepage());
 
@@ -24,7 +26,7 @@ class FirstPage  extends StatelessWidget{
     // TODO: implement build
     return Scaffold(
 
-      backgroundColor:Colors.blueGrey,
+      backgroundColor:blue,
 
       body:SafeArea(
       child:Stack(
@@ -73,9 +75,10 @@ decoration: BoxDecoration(
                   //button
                   padding: const EdgeInsets.all(50.0),
                   child:FlatButton(
-                    color:Colors.blueGrey,
+                    color:blue,
 
                   child: Text('Location',style: TextStyle(color:Colors.white,fontSize: 25,fontFamily: 'Verdana'),),
+                    padding: const EdgeInsets.all(10.0),
 
                     onPressed: (){
                       Navigator.push(
